@@ -3,6 +3,8 @@
 Small go app that simply prints all HTTP headers from the request.
 Useful for introspection of the HTTP request and headers.
 
+The binary is published as a docker image: [jmv2/print-headers](https://hub.docker.com/repository/docker/jmv2/print-headers)
+
 Usage:
 
 ```
