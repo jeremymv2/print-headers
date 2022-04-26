@@ -1,2 +1,3 @@
-# print_headers
-Small go app that simply prints HTTP headers
+# print-headers
+
+Small go app that simply prints all HTTP headers from the request
