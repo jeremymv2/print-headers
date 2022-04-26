@@ -24,8 +24,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("REQUEST\n%s", string(reqDump))
-	resp := fmt.Sprintf("Hello %s", r.Header.Get("User-Agent"))
+	fmt.Printf("REQUEST:\n%s", string(reqDump))
+	resp := fmt.Sprintf("Hello, here is your request:\n%s", string(reqDump))
 	_, err = w.Write([]byte(resp))
 	if err != nil {
 		log.Panicf("not able to write http output: %s", err)
